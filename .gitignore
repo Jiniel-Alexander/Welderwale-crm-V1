@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Log files
+*.log
+logs/
+
+# Build and Temp folders
+dist/
+build/
+tmp/
+temp/
+scratch/
+
+# Twenty Development
+# The active Twenty development environment is maintained in WSL (/home/roy/construction-crm-v1).
+# The legacy Windows 'twenty' folder is excluded from this documentation/architecture repository to prevent tracking 10GB+ of third-party source code.
+twenty/
+
+# Secrets
+*.pem
+*.key
+credentials.json
+secret.json
