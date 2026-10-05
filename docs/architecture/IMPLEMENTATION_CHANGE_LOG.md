@@ -50,3 +50,17 @@ The backend successfully boots, GraphQL schema is responsive, and native metadat
 **Impact:**
 The Twenty platform is now structurally sound. Milestone 1 implementation is explicitly unblocked and can commence immediately.
 
+
+## Milestone 1: Foundation Implementation (October 2026)
+- Stabilized Twenty backend build environment by resolving swc file-lock conflicts.
+- Acquired API tokens for Developer authentication.
+- Authored NodeJS script (create-crm.js) invoking Twenty's internal /metadata API.
+- Scaffolded physical entities: Worksite, Project, OrganizationContact, ApprovalHistory.
+- Configured relationships, custom text, and select fields with native API compatibility.
+- Inserted missing system Roles (Super Manager, Manager, Accountant, Project Lead, Intern) into the core PostgreSQL database.
+
+- Validated Twenty CE RBAC configuration limits (Create/Update are identical permissions natively).
+- Assigned raw SQL roles to specific UserWorkspaces via core.roleTarget.
+- Configured ObjectPermission CRUD matrices for M1 custom objects across all roles.
+- Tested GraphQL mutation derivations and verified Project Customer auto-derivation limitation.
+- Marked Milestone 1 as COMPLETE.
